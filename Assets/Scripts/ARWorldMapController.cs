@@ -22,6 +22,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
     /// </remarks>
     public class ARWorldMapController : MonoBehaviour
     {
+
         [Tooltip("The ARSession component controlling the session from which to generate ARWorldMaps.")]
         [SerializeField]
         ARSession m_ARSession;
@@ -156,6 +157,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             request.Dispose();
 
             SaveAndDisposeWorldMap(worldMap);
+
         }
 
         IEnumerator Load()
